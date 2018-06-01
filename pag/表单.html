@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .cl {
+            border: 1px solid black;
+            padding: 15px;
+            width: 95%;
+            background-color: rgb(250, 242, 227);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">表单</h1>
+    <hr />
+    <div class="cl">
+        <h2>单选按钮输入</h2>
+        <form>
+            <input type="radio" name="sex" value="male" chacked>Male
+            <br/>
+            <input type="radio" name="sex" value="female">Female
+            <br />
+            <input type="submit" value="sub">
+        </form>
+    </div>
+    <hr />
+    <div class="cl">
+        <h2>多选按钮输入</h2>
+        <form>
+            <input type="checkbox" name="vehicle" value="Bike">I have a bike
+            <br>
+            <input type="checkbox" name="vehicle" value="Car">I have a car
+        </form>
+    </div>
+    <hr />
+    <div class="cl">
+        <h2>Action 属性</h2>
+        <p>
+            <em>action 属性</em>定义在提交表单时执行的动作。</p>
+        <p>向服务器提交表单的通常做法是使用提交按钮。</p>
+        <p>通常，表单会被提交到 web 服务器上的网页。</p>
+        <p>在上面的例子中，指定了某个服务器脚本来处理被提交表单：</p>
+        <pre>&lt;form action=&quot;action_page.php&quot;&gt;</pre>
+        <p>如果省略 action 属性，则 action 会被设置为当前页面。</p>
+    </div>
+    <hr />
+    <div class="cl">
+        <h2>Method属性</h2>
+        <form method="GET">
+            Firstname:(GET)
+            <br />
+            <input type="text" name="firstdname" value="Zhang">
+            <br />
+        </form>
+        <form method="POST">
+            Lastname:(POST)
+            <br />
+            <input type="text" name="lastnam" value="Jiantong">
+            <br />
+            <input type="submit" value="submit">
+            <br />
+        </form>
+    </div>
+    <hr />
+    <div class="cl">
+        <h2>用&lt;fieldset&gt;组合表单数据</fieldset>
+        </h2>
+        <form action="/demo/demo_form.asp">
+            <fieldset>
+                <legend>Personal information:</legend>
+                First name:
+                <br/>
+                <input type="text" name="firstname" value="Mickey">
+                <br/> Last name:
+                <br />
+                <input type="text" name="lastname" value="Mouse">
+                <br/> Pass word:
+                <br />
+                <input type="password" name="pass_word">
+                <br/>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <hr />
+    <div class="cl">
+        <h2>&lt;select&gt;元素</h2>
+        <select name="scars">
+            <option value="volvo">Volvo</option>
+            <option value="saad">Saad</option>
+            <option value="fiat" selected>Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </div>
+    <hr />
+    <div class="cl">
+        <h2>&lt;textarea&gt;元素</h2>
+        <textarea name="message" rows="10" cols="30">
+            The cat was playing in the garden.
+        </textarea>
+    </div>
+    <hr />
+    <div class="cl">
+        <h2>&lt;button&gt;元素</h2>
+        <button type="button" onclick="alert('Hello World!')">点击我！</button>
+    </div>
+    <hr />
+    <a href=".\表单2.html" style="text-decoration: none">HTML5新增输入类型</a>
+    <br />
+    <a href=".\表单3.html" style="text-decoration: none">HTML5新增输入属性</a>
+    <br />
+    <a href="..\main.html" style="text-decoration:none">回到主页</a>
+</body>
+
+</html>

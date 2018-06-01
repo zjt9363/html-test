@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .cl {
+            border: 1px solid black;
+            padding: 15px;
+            width: 95%;
+            background-color: rgb(250, 242, 227);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">表单</h1>
+    <hr />
+    <div class="cl">
+        readonly 属性 readonly 属性规定输入字段为只读（不能修改）：
+        <form action="">
+            First name:
+            <br>
+            <input type="text" name="firstname" value="John" readonly>
+            <br> Last name:
+            <br>
+            <input type="text" name="lastname">
+        </form>
+    </div>
+    <hr />
+    <div class="cl">
+        disabled 属性 disabled 属性规定输入字段是禁用的。 被禁用的元素是不可用和不可点击的。 被禁用的元素不会被提交。
+        <form action="">
+            First name:
+            <br>
+            <input type="text" name="firstname" value="John" disabled>
+            <br> Last name:
+            <br>
+            <input type="text" name="lastname">
+        </form>
+    </div>
+    <hr />
+    <div class="cl">
+        size 属性 size 属性规定输入字段的尺寸（以字符计）：
+        <form action="">
+            First name:
+            <br>
+            <input type="text" name="firstname" value="John" size="40">
+            <br> Last name:
+            <br>
+            <input type="text" name="lastname">
+        </form>
+    </div>
+    <hr />
+    <div class="cl">
+        maxlength 属性 maxlength 属性规定输入字段允许的最大长度：
+        <form action="">
+            First name:
+            <br>
+            <input type="text" name="firstname" maxlength="10">
+            <br> Last name:
+            <br>
+            <input type="text" name="lastname">
+        </form>
+    </div>
+    <hr />
+    <h2>下面为HTML5新增属性</h2>
+    <hr />
+    <div class="cl">
+        autocomplete属性
+        <form action="/example/html5/demo_form.asp" method="get" autocomplete="on">
+            First name:
+            <input type="text" name="fname" />
+            <br /> Last name:
+            <input type="text" name="lname" />
+            <br /> E-mail:
+            <input type="email" name="email" autocomplete="off" />
+            <br />
+            <input type="submit" />
+        </form>
+
+        <p>填写并提交表单，然后重新加载该页面，看看自动完成功能是如何工作的。</p>
+        <p>注意，表单的自动完成功能是打开的，但是 e-mail 字段的自动完成功能是关闭的。</p>
+    </div>
+    <hr />
+    <div class="cl">
+        multiple属性
+        <form action="/example/html5/demo_form.asp" method="get">
+            选择图片：
+            <input type="file" name="img" multiple="multiple" />
+            <input type="submit" />
+        </form>
+        <p>请尝试在浏览文件时选取一个以上的文件。</p>
+    </div>
+    <a href="..\main.html" style="text-decoration:none">回到主页</a>
+</body>
+</html>
+<!1000>

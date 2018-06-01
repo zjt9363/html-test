@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .cl {
+            border: 1px solid black;
+            padding: 15px;
+            width: 95%;
+            background-color: rgb(250, 242, 227);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center">表单</h1>
+    <hr />
+    </div>
+    <hr />
+    <div class="cl">
+        <h3>&lt;datalist&gt; 元素</h3>
+        <form action="/demo/demo_form.asp">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer" />
+                <option value="Firefox" />
+                <option value="Chrome" />
+                <option value="Opera" />
+                <option value="Safari" />
+            </datalist>
+            <input type="submit">
+        </form>
+        <p>
+            <b>注释：</b>IE9 及早期版本不支持 type="number"。
+        </p>
+    </div>
+    <hr />
+    <div class="cl">
+        <h3>&lt;number&gt; 元素</h3>
+        <form>
+            数量（1到5之间）：
+            <input type="number" name="quantity" min="1" max="5">
+            <input type="submit" value="sub">
+        </form>
+        <p>
+            <b>注释：</b>IE9 及早期版本不支持 type="number"。
+        </p>
+    </div>
+    <hr />
+    <div class="cl">
+        <h3>&lt;date&gt; 元素</h3>
+        <form>
+            生日：
+            <input type="date" name="bday">
+            <input type="submit">
+        </form>
+        <p>
+            <b>注释：</b>Firefox 或者 Internet Explorer 11 以及更早版本不支持 type="date"。
+        </p>
+        <br />您也可以加入时间限制
+        <form action="/demo/demo_form.asp">
+            请输入 1980-01-01 之前的日期：
+            <br>
+            <input type="date" name="bday" max="1979-12-31">
+            <br>
+            <br> 请输入 2000-01-01 之后的日期：
+            <br>
+            <input type="date" name="bday" min="2000-01-02">
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+
+        <p>
+            <b>注释：</b>
+            Internet Explorer 不支持 type="date"。
+        </p>
+    </div>
+    <hr />
+    <div class="cl">
+        <h3>&lt;color&gt; 元素</h3>
+        <form action="action_page.php">
+            Select your favorite color:
+            <input type="color" name="favcolor" value="#ff0000">
+            <input type="submit">
+        </form>
+        <p>
+            <b>Note:</b> type="color" is not supported in Internet Explorer.
+        </p>
+    </div>
+    <hr />
+    <div class="cl">
+        <h3>&lt;range&gt; 元素</h3>
+        <form action="/demo/demo_form.asp" method="get">
+            Points:
+            <input type="range" name="points" min="0" max="10">
+            <input type="submit">
+        </form>
+        <p>
+            <b>注释：</b>IE9 及早期版本不支持 type="range"。</p>
+    </div>
+    <hr />
+    <div class="cl">
+        <h3>&lt;month&gt; 元素</h3>
+        <form action="/demo/demo_form.asp">
+            生日（月和年）：
+            <input type="month" name="bdaymonth">
+            <input type="submit">
+        </form>
+        <p>
+            <b>注释：</b>Firefox 或者 Internet Explorer 11 以及更早版本不支持 type="month"。
+        </p>
+    </div>
+    <hr />
+    <a href="..\main.html" style="text-decoration:none">回到主页</a>
+</body>
+
+
+</html>
